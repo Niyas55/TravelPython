@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        .new{ background-color:pink;
+
+             }
+        .new1{ background-color:cyan
+            }
+    </style>
+</head>
+<body style="background-image: url('https://images.pexels.com/photos/7130534/pexels-photo-7130534.jpeg?auto=compress&cs=tinysrgb&w=12600&h=7500&dpr=1');">
+<div class="new" align="center">
+    <h1 class="new1"><b>Login Page</b></h1>
+<form action="login" method="post">
+  {% csrf_token %}
+  <input type="text" name="username" placeholder="enter your user name"><br>
+  <input type="password" name="password" placeholder="enter your password"><br>
+  <input type="submit">
+</form>
+    </div>
+</body>
+</html>
